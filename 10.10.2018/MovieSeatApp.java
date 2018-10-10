@@ -14,18 +14,18 @@ public class MovieSeatApp {
 		}
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Please enter the number of seats you are intrested in purchasing: ");
+		System.out.print("Please enter the number of seats you are interested in purchasing: ");
 		int numberOfBoughtSeats = sc.nextInt();
 		for (int i = 0; i < numberOfBoughtSeats; i++) {
-			System.out.print("Please enter the desired row (between 0 and 4): ");
+			System.out.print("Please enter the desired row (between 0 and 3): ");
 			int seatRow = sc.nextInt();
-			System.out.print("Please enter the desired column(between 0 and 3) : ");
+			System.out.print("Please enter the desired column(between 0 and 2) : ");
 			int seatColumn = sc.nextInt();
 			while (theatre[seatRow][seatColumn].isTaken() == true) {
 				System.out.println("Sorry, the seat is taken, please chose another seat");
-				System.out.print("Please enter the desired row (between 0 and 4): ");
+				System.out.print("Please enter the desired row (between 0 and 3): ");
 				seatRow = sc.nextInt();
-				System.out.print("Please enter the desired column(between 0 and 3): ");
+				System.out.print("Please enter the desired column(between 0 and 2): ");
 				seatColumn = sc.nextInt();
 			}
 			theatre[seatRow][seatColumn].setTaken(true);

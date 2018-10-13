@@ -1,4 +1,3 @@
-
 public class MovieSeat {
 	private double price;
 	private boolean isTaken;

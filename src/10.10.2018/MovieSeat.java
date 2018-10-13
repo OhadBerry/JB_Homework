@@ -1,4 +1,3 @@
-package ClassExercises;
 
 public class MovieSeat {
 	private double price;

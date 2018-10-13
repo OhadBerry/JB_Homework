@@ -1,5 +1,3 @@
-package ClassExercises;
-
 import java.util.Scanner;
 
 public class MovieSeatApp {

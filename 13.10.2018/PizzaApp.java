@@ -23,7 +23,7 @@ public class PizzaApp {
 		
 		System.out.println("------------------------------------------------");
 
-		for (int i = 0; i < pizzas.length; i) {
+		for (int i = 0; i < pizzas.length; i++) {
 			sumOfToppings += pizzas[i].getToppings(); 
 		}
 		

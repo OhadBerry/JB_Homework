@@ -16,8 +16,8 @@ public class Passenger extends Person {
 	
 	//-----------------Constructor--------------------
 	
-	public Passenger(int passportNum) {
-		super();
+	public Passenger(String name, String surname, int passportNum) {
+		super(name, surname);
 		this.passportNum = passportNum;
 	}
 
@@ -27,5 +27,9 @@ public class Passenger extends Person {
 		super.print();
 		System.out.println("passportNum : "+getPassportNum());
 	}
+
+	
 	
 }
+
+

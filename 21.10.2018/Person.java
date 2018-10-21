@@ -21,9 +21,19 @@ public abstract class Person {
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
+
+	//-----------------Constructor--------------------
+	
+	
+	public Person(String name, String surname) {
+		super();
+		this.name = name;
+		this.surname = surname;
+	}
 	
 	//-----------------Functions--------------------
-	
+
+
 	public void print(){
 		System.out.println("name : "+getName()+", "+"surname : "+getSurname());
 	}

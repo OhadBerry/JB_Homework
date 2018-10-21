@@ -28,9 +28,9 @@ public class FlightAttendant extends Person {
 	}
 	
 	//-----------------Constructors--------------------
-
-	public FlightAttendant(int seniority, String countryOfOrigin, String flightClass) {
-		super();
+	
+	public FlightAttendant(String name, String surname, int seniority, String countryOfOrigin, String flightClass) {
+		super(name, surname);
 		this.seniority = seniority;
 		this.countryOfOrigin = countryOfOrigin;
 		this.flightClass = flightClass;
@@ -44,5 +44,6 @@ public class FlightAttendant extends Person {
 							"flightClass : "+getFlightClass()+" , "+
 							"seniority : "+getSeniority());
 		}
+	
 
 }

@@ -31,8 +31,8 @@ public class GroundAttendant extends Person {
 	
 	//-----------------Constructors--------------------
 	
-	public GroundAttendant(int seniority, String countryOfOrigin, String groundFunction) {
-		super();
+	public GroundAttendant(String name, String surname, int seniority, String countryOfOrigin, String groundFunction) {
+		super(name, surname);
 		this.seniority = seniority;
 		this.countryOfOrigin = countryOfOrigin;
 		this.groundFunction = groundFunction;
@@ -46,7 +46,5 @@ public class GroundAttendant extends Person {
 							"groundFunction : "+getGroundFunction()+" , "+
 							"seniority : "+getSeniority());
 		}
-	
-	
 
 }

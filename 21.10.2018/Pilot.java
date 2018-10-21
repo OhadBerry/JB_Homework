@@ -21,8 +21,8 @@ public class Pilot extends Person {
 	
 	//-----------------Constructor--------------------
 	
-	public Pilot(int pilotLicenseNumber, int seniority) {
-		super();
+	public Pilot(String name, String surname, int pilotLicenseNumber, int seniority) {
+		super(name, surname);
 		this.pilotLicenseNumber = pilotLicenseNumber;
 		this.seniority = seniority;
 	}
@@ -34,5 +34,6 @@ public class Pilot extends Person {
 		System.out.println("pilotLicenseNumber : "+getPilotLicenseNumber()+" , "+
 							"seniority : "+getSeniority());
 	}
+	
 
 }
